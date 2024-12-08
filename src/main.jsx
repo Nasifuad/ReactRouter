@@ -12,6 +12,7 @@ import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import Github, { githubInfoLoader } from "./Components/Github/Github";
+import User from "./Components/User/User";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,14 +21,15 @@ const router = createBrowserRouter(
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
       <Route loader={githubInfoLoader} path="github" element={<Github />} />
-      <Route
+      <Route path="user/:id" element={<User />} />
+      {/* <Route
         path="*"
         element={
           <h1 className="text-4xl p-10 text-red-500  font-bold line-through">
             404 Not fucking found u dumbfuck
           </h1>
         }
-      />
+      /> */}
     </Route>
   )
 );
