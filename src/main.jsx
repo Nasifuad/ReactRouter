@@ -13,6 +13,8 @@ import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import Github, { githubInfoLoader } from "./Components/Github/Github";
 import User from "./Components/User/User";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
